@@ -613,15 +613,15 @@
 
         <div class="subscribe-footer-container">
           <p class="footer-links">Subscribe</p>
-          <form class="subscribe-button-form" action="">
-            <label class="subscribe-form-label" for="subscribe-email" ></label>
+          <form class="subscribe-button-form">
+            <label class="subscribe-form-label" >
             <input
               class="subscriber-email"
               type="email"
               name="subscriber_email"
-              id="subscribe-email"
               placeholder="E-mail"
             />
+          </label>
             <button class="subscribe-button" type="submit">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
@@ -635,9 +635,9 @@
 
     <!--Backdrop with modal window-->
 
-    <div class="backdrop is-open">
+    <div class="backdrop ">
       <div class="modal">
-        <button class="close-btn">
+        <button class="close-btn" type="button">
           <svg
             class="close-btn-icon"
             width="8"
@@ -647,12 +647,10 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-
+        <p class="contacts-leaving-form-title">
+          Leave your contacts and we will call you back
+        </p>
         <form class="contacts-leaving-form">
-          <p class="contacts-leaving-form-title">
-            Leave your contacts and we will call you back
-          </p>
-
           <div class="user-info-wrap">
             <label class="user-info-label" for="customer-name">Name</label>
             <div class="input-icon-wrapper">
